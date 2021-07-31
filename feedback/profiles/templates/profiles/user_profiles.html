@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	User - Profile</title>
+</head>
+<body>
+    <ul>
+        {% for profile in profiles  %}
+        <li>
+            <img src="{{ profile.image.url }}">
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
