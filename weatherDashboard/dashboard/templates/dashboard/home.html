@@ -1,0 +1,14 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex justify-content-center text-center flex-column flex-nowrap" id="sideform"> 
+                {% include 'dashboard/components/sideform.html' %}
+            </div>
+            <div class="col-12 col-md-8 d-flex justify-content-center text-center flex-column flex-nowrap"> 
+                {% include 'dashboard/components/card.html' %}
+            </div>
+        </div>
+    </div>
+{% endblock  %}
